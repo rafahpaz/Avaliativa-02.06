@@ -5,8 +5,8 @@ import { Link } from "expo-router";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Tela principal</Text>
-      <Link href="/telaA">Ir para tela A</Link>
+      <Text style={styles.text}>Tela A</Text>
+      <Link href="/telaB">Ir para tela B</Link>
       <StatusBar style="auto" />
     </View>
   );
