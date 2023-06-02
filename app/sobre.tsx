@@ -9,7 +9,7 @@ export default function App() {
       <Text style={styles.logo}>Sphare</Text>
       <Text style={styles.logo2}>A tecnologia da inovação impulsiona o progresso humano, abrindo novas possibilidades e transformando a maneira como vivemos, trabalhamos e nos relacionamos. Com avanços constantes em inteligência artificial, robótica e Internet das Coisas, a tecnologia da inovação está moldando um futuro promissor, repleto de oportunidades e soluções criativas para os desafios da sociedade. Seu impacto revolucionário está ampliando horizontes e acelerando a evolução da humanidade.</Text>
       <TouchableOpacity href='home' style={styles.loginBtn}>
-        <Text style={styles.loginText}>Voltar pra home</Text>
+        <Text style={styles.loginText}>home</Text>
       </TouchableOpacity>
     </View>
   );

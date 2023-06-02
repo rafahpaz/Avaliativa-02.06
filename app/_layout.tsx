@@ -1,27 +1,51 @@
 import { Drawer } from "expo-router/drawer";
+import Icon from "@ant-design/icons/lib/components/Icon";
 
-export default function RootLayout() {
+export default function AppLayout() {
   return (
     <Drawer>
       <Drawer.Screen
-        name="index"
+        name="home"
         options={{
           drawerLabel: "Home",
           title: "Bem-vindo",
+          drawerIcon: ({size}) => (
+            <Icon
+              name="home"
+              size={size}
+              color='black'
+            />
+          ),
         }}
       />
       <Drawer.Screen
-        name="telaA"
+        name="cadastro"
         options={{
-          drawerLabel: "Tela A",
-          title: "Tela A",
+          drawerLabel: "Cadastro",
+          title: "Cadastro",
+          drawerItemStyle: { height: 0 }
         }}
       />
       <Drawer.Screen
-        name="telaB"
+        name="sobre"
         options={{
-          drawerLabel: "Tela B",
-          title: "Tela B",
+          drawerLabel: "Sobre",
+          title: "Sobre",
+          drawerItemStyle: { height: 0 }
+        }}
+      />
+      <Drawer.Screen
+        name="index"
+        options={{
+          drawerLabel: "index",
+          title: "index",
+          drawerIcon: ({focused, size}) => (
+            <Icon
+              name="heart"
+              size={size}
+              color='black'
+            />
+          ),
         }}
       />
     </Drawer>

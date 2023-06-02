@@ -8,8 +8,43 @@ export default function App() {
       <Image source={require('../assets/logo-sphare.png')} style={styles.logoImage} />
       <Text style={styles.logo}>Sphare</Text>
       <Text style={styles.logo2}>A tecnologia da inovação impulsiona o progresso humano, abrindo novas possibilidades e transformando a maneira como vivemos, trabalhamos e nos relacionamos. Com avanços constantes em inteligência artificial, robótica e Internet das Coisas, a tecnologia da inovação está moldando um futuro promissor, repleto de oportunidades e soluções criativas para os desafios da sociedade. Seu impacto revolucionário está ampliando horizontes e acelerando a evolução da humanidade.</Text>
+      <Text style={styles.cadastro}>Cadastre-se</Text>
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.inputText}
+          placeholder="Nome"
+          placeholderTextColor="grey"
+        />
+      </View>
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.inputText}
+          placeholder="E-mail"
+          placeholderTextColor="grey"
+          secureTextEntry={true}
+        />
+      </View>
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.inputText}
+          placeholder="Data de Nascimento"
+          placeholderTextColor="grey"
+          secureTextEntry={true}
+        />
+      </View>
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.inputText}
+          placeholder="CPF"
+          placeholderTextColor="grey"
+          secureTextEntry={true}
+        />
+      </View>
+      <TouchableOpacity href='sobre' style={styles.loginBtn}>
+        <Text style={styles.loginText}>Salvar</Text>
+      </TouchableOpacity>
       <TouchableOpacity href='home' style={styles.loginBtn}>
-        <Text style={styles.loginText}>Voltar pra home</Text>
+        <Text style={styles.loginText}>Voltar</Text>
       </TouchableOpacity>
     </View>
   );
@@ -21,26 +56,41 @@ const styles = StyleSheet.create({
     backgroundColor: '#374140',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 8,
+    borderRadius: 0,
+    marginVertical: -200,
+  },
+  logoImage: {
+    width: 300,
+    height:200,
+    marginBottom: 10,
+    marginVertical: 170,
   },
   logo: {
     fontWeight: 'bold',
     fontSize: 27,
     color: '#FFFFFF',
-    marginBottom: -5,
+    marginBottom: -80,
+    marginTop: 0,
   },
   logo2: {
     fontSize: 20,
     color: '#FFFFFF',
-    marginBottom: 50,
+    marginVertical: 20,
     textAlign: 'center',
+    marginTop: 80,
+  },
+  cadastro: {
+    fontWeight: 'bold',
+    fontSize: 27,
+    color: '#FFFFFF',
+    margin: 20,
   },
   inputView: {
     width: '40%',
     backgroundColor: '#f7f7f8',
     borderRadius: 8,
     height: 50,
-    marginBottom: 10,
+    marginBottom: 11,
     justifyContent: 'center',
     padding: 20,
   },
@@ -65,9 +115,4 @@ const styles = StyleSheet.create({
     marginTop: 60,
     marginBottom: -10,
   },
-  logoImage: {
-    width: 400,
-    height:300,
-    marginTop: -50,
-  }
 });
